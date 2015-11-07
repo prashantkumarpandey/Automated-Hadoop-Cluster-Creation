@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+set timeout 600
+
+spawn ambari-server setup -j /usr/java/jdk1.8.0_40/
+expect "(n)? " {send "\r"}
+expect "(n)? " {send "\r"}
+expect eof 

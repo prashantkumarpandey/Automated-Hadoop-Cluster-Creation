@@ -1,0 +1,17 @@
+#!/usr/bin/expect
+set timeout 1200
+set user [lindex $argv 0]
+set pass [lindex $argv 1]
+set ip_address [lindex $argv 2]
+
+spawn scp setup-node.sh node-list.txt /root/.ssh/id_rsa.pub jdk-8u40-linux-x64.rpm thp.txt hdp.repo ambari.repo install-ambari-agent.sh $user@$ip_address:~ 
+expect "(yes/no)? " {send "yes\r"}
+expect "password:" {send "$pass\r"}
+expect eof 
+
+spawn ssh $user@$ip_address "./setup-node.sh $ip_address"
+expect "password:" {send "$pass\r"}
+expect {exit}
+
+spawn ssh $user@$ip_address reboot
+expect "password:" {send "$pass\r"}

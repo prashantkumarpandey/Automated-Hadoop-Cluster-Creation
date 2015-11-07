@@ -1,0 +1,7 @@
+#VERSION_NUMBER=2.1.1-236
+[Updates-ambari-2.1.1]
+name=ambari-2.1.1 - Updates
+baseurl=http://master.teckstory.com/ambari-2.1.1/centos6/
+gpgcheck=0
+enabled=1
+priority=1

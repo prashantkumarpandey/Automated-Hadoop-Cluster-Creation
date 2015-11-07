@@ -1,0 +1,15 @@
+#VERSION_NUMBER=2.3.0.0-2557
+[HDP-2.3.0.0]
+name=HDP Version - HDP-2.3.0.0
+baseurl=http://master.teckstory.com/HDP/centos6/2.x/updates/2.3.0.0
+gpgcheck=0
+enabled=1
+priority=1
+
+
+[HDP-UTILS-1.1.0.20]
+name=HDP Utils Version - HDP-UTILS-1.1.0.20
+baseurl=http://master.teckstory.com/HDP-UTILS-1.1.0.20/repos/centos6
+gpgcheck=0
+enabled=1
+priority=1

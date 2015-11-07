@@ -1,0 +1,14 @@
+{
+  "blueprint" : "default-blueprint",
+  "default_password" : "secretpwd",
+  "host_groups" :[
+    {
+      "name" : "master_group", 
+      "hosts" : [{"fqdn" : "master.teckstory.com"}]
+    },
+    {
+      "name" : "slave_group", 
+      "host_count" : 2
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "Repositories" : {
+    "base_url" : "http://master.teckstory.com/HDP-UTILS-1.1.0.20/repos/centos6",
+    "verify_base_url" : false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "configurations" : [],
+  "host_groups" : [
+    {
+      "components" : [
+        { "name" : "YARN_CLIENT" },
+        { "name" : "HDFS_CLIENT" },
+        { "name" : "HIVE_SERVER" },
+        { "name" : "SQOOP"       },
+        { "name" : "MYSQL_SERVER"  },
+        { "name" : "HISTORYSERVER" },
+        { "name" : "METRICS_MONITOR" },
+        { "name" : "HIVE_METASTORE"  },
+        { "name" : "NAMENODE"        },
+        { "name" : "TEZ_CLIENT"      },
+        { "name" : "ZOOKEEPER_CLIENT" },
+        { "name" : "HCAT"       },
+        { "name" : "PIG"        },
+        { "name" : "WEBHCAT_SERVER"      },
+        { "name" : "SECONDARY_NAMENODE"  },
+        { "name" : "MAPREDUCE2_CLIENT"   },
+        { "name" : "ZOOKEEPER_SERVER"    },
+        { "name" : "OOZIE_CLIENT"        },
+        { "name" : "AMBARI_SERVER"       },
+        { "name" : "OOZIE_SERVER"        },
+        { "name" : "APP_TIMELINE_SERVER" },
+        { "name" : "HIVE_CLIENT"         },
+        { "name" : "METRICS_COLLECTOR"   },
+        { "name" : "RESOURCEMANAGER"     }
+      ],
+      "configurations" : [ ],
+      "name" : "master_group",
+      "cardinality" : "1"
+    },
+    {
+      "components" : [
+        { "name" : "NODEMANAGER"      },
+        { "name" : "ZOOKEEPER_SERVER" },
+        { "name" : "DATANODE"         },
+        { "name" : "METRICS_MONITOR"  }
+      ],
+      "configurations" : [ ],
+      "name" : "slave_group",
+      "cardinality" : "2"
+    }
+  ],
+  "Blueprints" : {
+    "stack_name" : "HDP",
+    "stack_version" : "2.3"
+  }
+}
