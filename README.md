@@ -6,13 +6,13 @@ For detailed explanation of scripts and related concepts visit www.teckstory.com
 # Pre-requisites
 
  * Three VMs created using VirtualBox and CentOS 6.4 installed. This demo used CentOS 6.4 minimal ISO image for installation. This demo will use the first VM as Master and other two VMs as data nodes. This demo is tested with 4 GB RAM and 2 CPU Cores for master node VM whereas, 2 GB RAM and 1 CPU core for each data node VM.
+ * Network connectivity and working ping from the master node to both data nodes.
  * VirtualBox Guest Additions installed for all three VMS. This is necessary to create shared folders. Create a shared folder on your master node VM and mount them. Download all scripts and files from this git project and place all of them in your shared folder. Make sure you are able to read these files from your master node VM.
+ * Download JDK (jdk-8u40-linux-x64.rpm) from Oracle.  
  * Download following tarballs from HortonWorks. You can find a download location for your tarballs from [HowrtonWorks documentation.](http://docs.hortonworks.com/HDPDocuments/Ambari-2.1.0.0/bk_Installing_HDP_AMB/content/_hdp_stack_repositories.html)
  	* 	HDP-2.3.0.0-centos6-rpm.tar.gz
  	* 	HDP-UTILS-1.1.0.20-centos6.tar.gz
  	* 	ambari-2.1.1-centos6.tar.gz
-* Download JDK (jdk-8u40-linux-x64.rpm) from Oracle.  
-* Network connectivity and working ping from the master node to both data nodes.
 
 # Manual preparation Activities
 
