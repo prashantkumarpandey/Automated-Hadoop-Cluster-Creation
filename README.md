@@ -21,10 +21,10 @@ For detailed explanation of scripts and related concepts visit www.teckstory.com
 * Modify hdp.repo and ambari.repo to update baseurl to fqdn for your master hostname.
 * Modify hdp-repo.json and hdp-utils-repo.json to update baseurl to fqdn for your master hostname.
 
-# Execute - First Script (prepare.sh)
+# Execute - First Script
 * Login to your master node VM as root. Change your current directory to your shared folder which you have mounted. Execute prepare.sh script. You need to pass root password as a first and only parameter to this script. This demo made an assumption that root password for all three nodes is same.
 * Once this script completes execution, it will reboot all VMs including master node VM.
 
-# Execute - Second Script (install-cluster.sh)
+# Execute - Second Script
 * Login to your masters node VM as root. Mount your shared folder again because reboot may have lost it. Change your current directory to your shared folder. execute install-cluster.sh. You need to pass root password as a first and only parameter to this script. This demo made an assumption that root password for all three nodes is same.
 * Login to Ambari web UI to monitor progress.
